@@ -71,6 +71,8 @@ Contains the messages used in `optitrack_multiplexer_ros2`. Each message contain
 # General Comments
 If you have **Motive 3.0** you get the option to select what information the Motive software broadcasts which reduces latency. This can be added as a service in `optitrack_wrapper_ros2`. 
 
+The mean error value of a rigid body is the difference between its model reconstructed markers and the actual measured markers.
+
 Leaving the `local_server` variable in `optitrack_wrapper_config.yaml` empty should work fine. However if you wanna put something more precise, you can run `ifconfig` on ubuntu to find your local adress (it is usually the inet that starts with 192.168...)
 
 The `marker_set_data` field in the `FrameOfMocapData.msg` file in `optitrack_wrapper_ros2_msgs` includes all the assets that are being streamed. Each asset has its own markers that are model filled in case they are not visible by the cameras. It includes an “all” asset that includes the positions of all the markers of all the assets in order (not visible (so markers coordinates = 0), point cloud solved and model filled if occluded).
