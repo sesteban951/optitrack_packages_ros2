@@ -71,7 +71,7 @@ Contains the messages used in `optitrack_multiplexer_ros2`. Each message contain
 # General Comments
 If you have **Motive 3.0** you get the option to select what information the Motive software broadcasts which reduces latency. This can be added as a service in `optitrack_wrapper_ros2`. 
 
-The mean error value of a rigid body is the difference between its model reconstructed markers and the actual measured markers.
+The 'mean_error' value of a rigid body is the difference between its model reconstructed markers and the actual measured markers.
 
 Leaving the `local_server` variable in `optitrack_wrapper_config.yaml` empty should work fine. However if you wanna put something more precise, you can run `ifconfig` on ubuntu to find your local adress (it is usually the inet that starts with 192.168...)
 
