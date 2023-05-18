@@ -208,6 +208,8 @@ GetLabeledMarkerMessage(sMarker *p_marker, ::rclcpp::Node::SharedPtr ros_node,
 
   labeled_marker.id = p_marker->ID;
 
+  labeled_marker.residual = p_marker->residual;
+
   // Marker ID Scheme:
   // Active Markers:
   //   ID = ActiveID, correlates to RB ActiveLabels list
