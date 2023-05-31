@@ -92,3 +92,4 @@ The device and forceplate parts are implemented only in the optitrack wrapper bu
 These are potential improvements of the current packages:
 * Add support for names that include spaces in them in `optitrack_multiplexer_ros2`.
 * Add `const` to arguments that are not allowed to change in class methods as well as to methods that are not allowed to change class attributes (all packages).
+* Test the device and forceplate parts.

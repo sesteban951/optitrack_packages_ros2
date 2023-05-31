@@ -23,7 +23,7 @@ optitrack_wrapper_node:
     # port where to receive incoming data
     server_data_port: 1511 #default value: 1511
     # display data description information
-    verbose_data_description: true
+    verbose_data_description: false
     # display frame information in terminal
     verbose_frame: false
     # topic to publish frame data on
