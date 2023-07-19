@@ -178,7 +178,8 @@ void OptitrackMultiplexer::FrameDataCallback(
         unlabeled_markers_stamped_msg;
 
     for (int i = 0; i < frame_data->n_labeled_markers; i++) {
-      if (frame_data->labeled_markers[i].model_id == 0) {
+      if (frame_data->labeled_markers[i].model_id == 0 ||
+          frame_data->labeled_markers[i].model_id == 1) {
         unlabeled_markers_stamped_msg.positions.push_back(
             frame_data->labeled_markers[i].position);
         unlabeled_markers_stamped_msg.id.push_back(
