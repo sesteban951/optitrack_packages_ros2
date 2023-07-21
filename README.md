@@ -88,8 +88,13 @@ Using a single marker, there is no way in current optitrack (3.0) to label and t
 
 The device and forceplate parts are implemented only in the optitrack wrapper but have not been tested.
 
+The way we detect unlabeled markers is if the model id is either 0 or 1 which may not be the best way to do it. 
+
+The mean error for skeletons does not work correctly (not sure if due to optitrack or implementation because it works correctly for rigid bodies using the same implementation).
+
 # Potential Improvements
 These are potential improvements of the current packages:
 * Add support for names that include spaces in them in `optitrack_multiplexer_ros2`.
 * Add `const` to arguments that are not allowed to change in class methods as well as to methods that are not allowed to change class attributes (all packages).
 * Test the device and forceplate parts.
+* More robust way (but more computationally expensive) to detect the unlabeled markers.
