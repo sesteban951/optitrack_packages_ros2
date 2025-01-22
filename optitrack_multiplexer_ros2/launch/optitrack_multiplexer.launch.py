@@ -13,7 +13,7 @@ def generate_launch_description():
         'config',
         'optitrack_multiplexer_config.yaml'
     )
-    natnet_client = Node(
+    optitrack_multiplexer = Node(
         package='optitrack_multiplexer_ros2',
         executable='multiplexer_node',
         name='optitrack_multiplexer_node',
@@ -23,5 +23,5 @@ def generate_launch_description():
         emulate_tty=True
     )
 
-    ld.add_action(natnet_client)
+    ld.add_action(optitrack_multiplexer)
     return ld
