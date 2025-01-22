@@ -45,6 +45,14 @@ ros2 launch optitrack_multiplexer_ros2 optitrack_multiplexer.launch.py
 
 The total pipeline latency that is added by the wrapper + multiplexer is between 0.5 and 1 milliseconds.
 
+## Launch both the wrapper and the multiplexer with the same launch file
+To launch both the wrapper and the mulitplexer with the same launch file run:
+``` shell script
+cd ~/ros2_ws
+. install/setup.bash
+ros2 launch optitrack_multiplexer_ros2 wrapper_and_multiplexer.launch.py
+```
+
 # optitrack_wrapper_ros2
 This package wraps the NatNetSDK and transforms commands sent from the SDK to the Motive software into ROS2 services. It also transforms the streamed data into a ROS2 message that is published. All the data is kept as is and no seleciton/multiplexing is done.
 
