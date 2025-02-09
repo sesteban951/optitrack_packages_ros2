@@ -1,3 +1,6 @@
+#ifndef DATA_MESSAGE_FUNCTIONS_H_
+#define DATA_MESSAGE_FUNCTIONS_H_
+
 #include "optitrack_wrapper_ros2_msgs/msg/analog_channel_data.hpp"
 #include "optitrack_wrapper_ros2_msgs/msg/device_data.hpp"
 #include "optitrack_wrapper_ros2_msgs/msg/force_plate_data.hpp"
@@ -50,3 +53,5 @@ GetAnalogChannelDataMessage(sAnalogChannelData *p_acd,
                             ::rclcpp::Node::SharedPtr ros_node, bool verbose);
 
 } // namespace optitrack_wrapper
+
+#endif

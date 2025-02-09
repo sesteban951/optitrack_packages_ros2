@@ -1,3 +1,6 @@
+#ifndef OPTITRACK_MULTIPLEXER_CLASS_H_
+#define OPTITRACK_MULTIPLEXER_CLASS_H_
+
 #include "optitrack_multiplexer_ros2_msgs/msg/marker_base.hpp"
 #include "optitrack_multiplexer_ros2_msgs/msg/rigid_body_base.hpp"
 #include "optitrack_multiplexer_ros2_msgs/msg/rigid_body_stamped.hpp"
@@ -122,3 +125,5 @@ private:
 };
 
 } // namespace optitrack_multiplexer
+
+#endif

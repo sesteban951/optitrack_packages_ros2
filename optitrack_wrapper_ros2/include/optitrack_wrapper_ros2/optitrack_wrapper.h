@@ -1,3 +1,6 @@
+#ifndef OPTITRACK_WRAPPER_CLASS_H_
+#define OPTITRACK_WRAPPER_CLASS_H_
+
 #include "builtin_interfaces/msg/time.hpp"
 #include "data_message_functions.h"
 #include "description_message_functions.h"
@@ -137,3 +140,5 @@ void NATNET_CALLCONV ProcessFrameCallback(sFrameOfMocapData *data,
                                           void *p_user_data);
 
 } // namespace optitrack_wrapper
+
+#endif

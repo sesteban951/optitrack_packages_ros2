@@ -1,3 +1,6 @@
+#ifndef DESCRIPTION_MESSAGE_FUNCTIONS_H_
+#define DESCRIPTION_MESSAGE_FUNCTIONS_H_
+
 #include "optitrack_wrapper_ros2_msgs/msg/camera_description.hpp"
 #include "optitrack_wrapper_ros2_msgs/msg/device_description.hpp"
 #include "optitrack_wrapper_ros2_msgs/msg/force_plate_description.hpp"
@@ -37,3 +40,5 @@ GetDeviceDescriptionMessage(sDeviceDescription *p_device);
 GetCameraDescriptionMessage(sCameraDescription *p_camera);
 
 } // namespace optitrack_wrapper
+
+#endif
